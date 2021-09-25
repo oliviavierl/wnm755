@@ -1,0 +1,299 @@
+/* PROJECT PAGE TOP SECTION */
+
+.view-window {
+	height:70vh;
+	position:relative;
+	background-position:center;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+.view-window>img {
+	max-width:calc(100% - 100px);
+	max-height:calc(100% - 100px);
+}
+
+
+
+/* TAB */ 
+
+main{
+	width: 100%;
+	/*background: #f3f3f3;*/
+}
+
+section{
+	display: none;
+	border-top: 2px solid #FF8300;
+	background-color: #fff;
+	box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.1);
+}
+
+input{
+	display: none;
+}
+
+.tab_label{
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	width: 33.05%;
+	font-weight: 400;
+	text-align: center;
+	border: 1px solid transparent;
+}
+
+.tab_label:before{
+	margin-right: 10px;
+}
+
+.tab_label:hover{
+	color: #FF8300;
+	cursor: pointer;
+}
+
+input:checked + .tab_label{
+	color: #fff;
+	background-color: #FF8300;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7,
+#tab8:checked ~ #content8,
+#tab9:checked ~ #content9{
+	display: block;
+}
+
+.tab_content{
+	padding: 40px;
+}
+
+#test_space{
+	background: #fCfCfC;
+}
+
+
+
+/* OVERVIEW TABLE */
+
+.overview {
+	border: 1.4px solid #E0E0E0; 
+	padding-bottom: 30px;
+}
+
+.overview div {
+	text-align: center;
+}
+
+/* CENTERED TEXT */
+
+.vertical-center {
+  top: 50%;
+  -ms-transform: translateY(25%);
+  transform: translateY(25%);
+  height: 400px;
+}
+
+
+/* PROJECT IMAGE */
+
+.cover-image {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.project_img {
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+}
+
+.persona_description{
+	padding-top: 0px;	
+}
+
+
+
+/* TEXT COLOR */
+
+.shipt-green-color {
+	color: #599900;
+}
+
+.audi-orange-color {
+	color: #DC4827;
+}
+
+
+
+/* BACKGROUND COLOR */
+
+.basic_bg_white {
+	background-color: #FFF;
+}
+
+.basic_bg_fadegray {
+	background-color: #F2F2F2;
+}
+
+.basic_bg_black {
+	background-color: #000;
+}
+
+.basic_bg_blue {
+	background-color: #6297ff;
+}
+.basic_bg_orange {
+	background-color: #fb8a00;
+}
+.vierl_red {
+	background-color: #e6846c;
+}
+.inter_red {
+	background-color: #823131;
+}
+
+.moonbuddy_bg_purple {
+	background-color: #542A76;
+}
+
+.moonbuddy_bg_gradient {
+  	background-color: #EE6192; /* For browsers that do not support gradients */
+  	background-image: linear-gradient(#EE6192, #542A76); /* Standard syntax (must be last) */
+}
+
+
+.rusty-shadow_navy {
+	background-color: #1a2c3c;
+}
+
+.rusty-shadow_blue {
+	background-color: #0d1b24;
+}
+
+.shipt_bg_green {
+	background-color: #599900;
+}
+
+.shipt_bg_lightgreen {
+	background-color: #EEF4E5;
+}
+
+
+.whattowear_bg_pink {
+	background-color: #FD5C63;
+}
+
+
+.cheesecake_bg_wine {
+	background-color: #9C324A;
+}
+
+
+
+/* MOON BUDDY */
+
+.user-flow-img {
+	width: 100%;
+    max-width: 262px;
+}
+
+.img-text-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.three_img{
+	width: 70%;
+	max-width: 200px;
+	margin:auto;
+}
+
+.three_img_text{
+	width: 85%;
+	margin:auto;
+	padding-bottom: 30px;
+}
+
+/* AUDI*/
+
+.top-right {
+  position: absolute;
+  top: 4em;
+  right: 8em;
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media only screen and ( max-width: 1700px) {
+
+}
+
+@media only screen and ( max-width: 1100px) {
+
+}
+
+@media only screen and ( max-width: 800px) {
+	.persona_description{
+		padding-left: 20px;	
+	}
+	.tab_label{
+		width: 32.95%;
+	}
+	.tab_label:before {
+		margin: 0;
+	}
+}
+
+@media only screen and ( max-width: 600px) {
+	.persona_description{
+		padding-left: 0px;	
+		padding-top: 20px;	
+	}
+	.tab_label {
+		padding: 15px;
+		width: 32.6%;
+	}
+	.tab_content{
+		padding: 30px;
+	}
+	.view-window {
+		background-size: 800px;
+	    background-repeat: no-repeat;	
+		height: 56vh;
+		background-position:top;
+
+	}
+}
+
+@media only screen and ( max-width: 380px) {
+	.tab_label{
+		width: 32.5%;
+	}
+}
+
+@media only screen and ( max-width: 325px) {
+
+}
+
+@media (max-width: 766px) {
+	
+}
+
+

@@ -1,0 +1,201 @@
+/* ATOMIC CLASSES */
+
+.display-flex {display:flex;}
+.display-inline-flex {display:inline-flex;}
+.display-block {display:block;}
+.display-inline-block {display:inline-block;}
+
+.flex-stretch {flex: 1 1 auto;}
+.flex-none {flex:none;}
+
+.flex-align-center {align-items: center;}
+.flex-justify-center {justify-content: center;}
+
+.flex-parent {
+	display:flex;
+}
+.flex-child {
+	flex:1 1 auto;
+}
+.flex-none {
+	flex:none;
+}
+
+/* home page */
+
+img#wave {
+    width: 8em;
+    height: auto;
+    margin-bottom: 1em;
+    margin-left: -2.5em;
+}
+
+/* footer */
+.footer-icons img {
+	height: 2em;
+	width: auto;
+}
+
+.footer-icons {
+	/* margin: 0 45% 0 45%; */
+	justify-content: center;
+}
+
+/* responsive layot */
+.project-text {
+	position: absolute; 
+	bottom: 0;
+}
+
+@media (max-width: 766px) {
+	.project-img img {
+		height:353px;
+		width: auto;
+
+	}
+	.project-text h3,
+	.project-text h6,
+	.project-text p {
+		display: none;
+	
+
+	}
+
+	.card div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.rsphoto {
+		width: 350px;
+		height: auto;
+	}
+	.mini {
+		margin-top: 1em;
+		margin-left: 1em;
+	}
+
+	.mini p {
+		color: #5c5c5c;
+
+	}
+}
+@media (min-width: 767px) {
+	.rsphoto {
+	width: 920px; height: auto; margin-top: 3em;
+}
+
+.mini {
+	display: none;
+}
+}
+
+
+/* project */
+.title-description {
+	margin-top: 15em;
+	margin-bottom: 10em;
+	text-align: center;
+}
+
+.title-img {
+	height: 400px;
+}
+
+.title-img img {
+ align-items: center;
+ width: 96%;
+ height: auto;
+ margin: 2em;
+}
+
+img.cover-image {
+	width: 100%;
+	height: auto;
+	align-self: center;
+}
+
+.cover-image {
+	text-align: center;
+}
+.list-dot {
+	list-style: none;
+}
+
+.white {
+	color: white;
+}
+.black {
+	color: #505050;
+}
+
+.orange {
+	color: #fb8a00;
+}
+
+.four {
+	display: flex;
+	flex-direction: row;
+	margin-top: 2em;
+
+}
+.four img {
+	height: 233px;
+	width: auto;
+
+}
+.proto {
+	width: 100%;
+	height: auto;
+	text-align: center;
+
+}
+.perso p{
+	line-height: 16px;
+}
+
+.mr50 {
+    margin-top: 50px;
+}
+@media (max-width: 767px) {
+.mr50 {
+    margin-top: 10px !important;
+}
+}
+@media (min-width: 768px) {
+
+.tophide {
+    display: none !important;
+}
+}
+@media (max-width: 767px) {
+
+.indexhide {
+    display: none !important;
+}
+}
+.media-image {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.mr80 {
+    margin-top: 80px;
+}
+@media (max-width: 767px) {
+.wrappers {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: auto;
+}
+
+.mr80 {
+    margin-top: 40px !important;
+}
+}
+@media (max-width: 1140px) {
+.tophide {
+    display: block;
+}
+}
